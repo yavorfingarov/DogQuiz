@@ -1,0 +1,71 @@
+name: CD
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+env:
+  DOTNET_VERSION: 9.0.x
+  STATUS_GIST_ID: 565201a48fe790a1f4600bfacbd49ce0
+  AZURE_WEBAPP_NAME: DogQuiz
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 2
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@3951f0dfe7a07e2313ec93c75700083e2005cbab
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Initialize
+        id: init
+        run: .\build\run.ps1 --exclusive --target Initialize
+
+      - name: Restore NuGet packages
+        run: .\build\run.ps1 --exclusive --target RestoreNuGetPackages
+
+      - name: Check code style
+        run: .\build\run.ps1 --exclusive --target ScanCode
+
+      - name: Build
+        run: .\build\run.ps1 --exclusive --target Build
+
+      - name: Run unit tests
+        run: .\build\run.ps1 --exclusive --target RunUnitTests
+
+      - name: Run mutation tests
+        run: .\build\run.ps1 --exclusive --target RunMutationTests
+
+      - name: Update status gists
+        if: ${{ github.event_name == 'push' }}
+        env:
+          GH_TOKEN: ${{ secrets.GIST_TOKEN }}
+        run: |
+          gh gist edit ${{ env.STATUS_GIST_ID }} --filename lines-of-code.json .\tmp\lines-of-code.json
+          gh gist edit ${{ env.STATUS_GIST_ID }} --filename maintainability.json .\tmp\maintainability.json
+          gh gist edit ${{ env.STATUS_GIST_ID }} --filename test-coverage.json .\tmp\test-coverage.json
+          gh gist edit ${{ env.STATUS_GIST_ID }} --filename mutation-score.json .\tmp\mutation-score.json
+
+      - name: Create package
+        if: ${{ github.event_name == 'push' && env.SRC_CHANGED == 'true' }}
+        run: .\build\run.ps1 --exclusive --target CreatePackage
+
+      - name: Deploy to Azure App Service
+        if: ${{ github.event_name == 'push' && env.SRC_CHANGED == 'true' }}
+        uses: azure/webapps-deploy@2fdd5c3ebb4e540834e86ecc1f6fdcd5539023ee
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: .\output

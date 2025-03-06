@@ -1,0 +1,10 @@
+﻿{
+  actionResult: {
+    StatusCode: 400
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  }
+}

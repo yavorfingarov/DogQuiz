@@ -1,0 +1,9 @@
+﻿{
+  dataLoader: [
+    {
+      Method: IDataLoader.Run(),
+      Arguments: []
+    }
+  ],
+  dataCleaner: []
+}

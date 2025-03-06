@@ -1,0 +1,28 @@
+﻿{
+  target: {
+    Message: Internal server error,
+    ShowCookieHint: false
+  },
+  log: {
+    Information: Error handled. Request: GET /exception/path | Status code: 500 | HasAntiforgeryToken: True | UserSessionId: (null),
+    Category: ErrorModel,
+    State: [
+      {
+        Method: GET
+      },
+      {
+        Path: /exception/path
+      },
+      {
+        StatusCode: 500
+      },
+      {
+        HasAntiforgeryToken: true
+      },
+      {},
+      {
+        {OriginalFormat}: Error handled. Request: {Method} {Path} | Status code: {StatusCode} | HasAntiforgeryToken: {HasAntiforgeryToken} | UserSessionId: {UserSessionId}
+      }
+    ]
+  }
+}

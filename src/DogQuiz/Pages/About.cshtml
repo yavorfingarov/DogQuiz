@@ -1,0 +1,119 @@
+﻿@page "/about"
+@model AboutModel
+
+<h1>About</h1>
+<p>
+    DogQuiz is an engaging web app designed to test your ability to recognize different dog breeds. 
+    Each quiz is generated from a large dataset of images, ensuring an unique experience every time.
+</p>
+<h2>Features</h2>
+<ul>
+    <li>
+        <strong>Variety:</strong> Each quiz provides a new set of dog breeds.
+    </li>
+    <li>
+        <strong>Challenge Friends:</strong> Compare scores to see who knows their dog breeds best.
+    </li>
+    <li>
+        <strong>Share Results:</strong> Easily share your results and invite others to participate.
+    </li>
+    <li>
+        <strong>Installable App:</strong> You can add DogQuiz to your browser for a smooth, app-like experience.
+    </li>
+</ul>
+<p>
+    DogQuiz is ideal for anyone looking to improve their knowledge of dog breeds in a fun and relaxed way.
+</p>
+<h2>Support</h2>
+<p>
+    For bug reports and feature requests, please use the
+    <a href="https://github.com/yavorfingarov/DogQuiz/issues">issue tracker</a>.
+    For questions, ideas and other topics, please check the
+    <a href="https://github.com/yavorfingarov/DogQuiz/discussions">discussions</a>.
+</p>
+<h2>Statistics</h2>
+<section class="overflow-auto">
+    <table>
+        <tbody>
+            <tr>
+                <th>
+                    <strong>Unique quizzes</strong>
+                </th>
+                <td class="align-end">@Model.QuizCount</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Solved quizzes</strong>
+                </th>
+                <td class="align-end">@Model.SolvedCount</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Average score</strong>
+                </th>
+                <td class="align-end">@Model.AverageScore.ToPercent()</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Breeds</strong>
+                </th>
+                <td class="align-end">@Model.BreedCount</td>
+            </tr>
+            <tr>
+                <th>
+                    <strong>Images</strong>
+                </th>
+                <td class="align-end">@Model.ImageCount.ToString("#,#", CultureInfo.InvariantCulture)</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="overflow-auto">
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Breed</th>
+                <th scope="col" class="align-end">Images</th>
+                <th scope="col" class="align-end">Recognizability</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var superBreed in Model.Breeds.Keys.OrderBy(x => x))
+            {
+                @if (Model.Breeds[superBreed].Count == 1 && Model.Breeds[superBreed][0].SubBreed == null)
+                {
+                    <tr>
+                        <th scope="row">@Model.Breeds[superBreed][0].SuperBreed</th>
+                        <td class="align-end">@Model.Breeds[superBreed][0].ImageCount</td>
+                        <td class="align-end">@Model.Breeds[superBreed][0].Recognizability.ToPercent()</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <th colspan="3">
+                            <strong>@superBreed</strong>
+                        </th>
+                    </tr>
+                    @foreach (var breed in Model.Breeds[superBreed].OrderBy(x => x.SubBreed))
+                    {
+                        <tr>
+                            <th scope="row">&ndash; @breed.SubBreed</th>
+                            <td class="align-end">@breed.ImageCount</td>
+                            <td class="align-end">@breed.Recognizability.ToPercent()</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</section>
+<h2>Acknowledgements</h2>
+<ul>
+    <li>
+        Images and breed categorization thanks to the <a href="https://dog.ceo/dog-api/">Dog API</a>.
+    </li>
+    <li>
+        Dog icon thanks to <a href="https://www.thedoodlelibrary.com/">The Doodle Library</a>.
+    </li>
+</ul>

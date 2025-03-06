@@ -1,0 +1,62 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: 30 9 * * 1
+
+permissions:
+  contents: read
+
+env:
+  DOTNET_VERSION: 9.0.x
+
+jobs:
+  scan:
+    name: Scan
+    runs-on: windows-latest
+    permissions:
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: csharp
+            build-mode: manual
+          - language: actions
+            build-mode: none
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Set up .NET
+        if: ${{ matrix.build-mode == 'manual' }}
+        uses: actions/setup-dotnet@3951f0dfe7a07e2313ec93c75700083e2005cbab
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@b56ba49b26e50535fa1e7f7db0f4f7b4bf65d80d
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+
+      - name: Initialize
+        if: ${{ matrix.build-mode == 'manual' }}
+        run: .\build\run.ps1 --exclusive --target Initialize
+
+      - name: Restore NuGet packages
+        if: ${{ matrix.build-mode == 'manual' }}
+        run: .\build\run.ps1 --exclusive --target RestoreNuGetPackages
+
+      - name: Build
+        if: ${{ matrix.build-mode == 'manual' }}
+        run: .\build\run.ps1 --exclusive --target Build
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@b56ba49b26e50535fa1e7f7db0f4f7b4bf65d80d
+        with:
+          category: "/language:${{matrix.language}}"

@@ -1,0 +1,273 @@
+﻿{
+  QuizCount: 0,
+  SolvedCount: 0,
+  AverageScore: null,
+  BreedCount: 40,
+  ImageCount: 120,
+  Breeds: {
+    Appenzeller: [
+      {
+        SuperBreed: Appenzeller,
+        SubBreed: null,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Australian: [
+      {
+        SuperBreed: Australian,
+        SubBreed: Kelpie,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Australian,
+        SubBreed: Shepherd,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Bakharwal: [
+      {
+        SuperBreed: Bakharwal,
+        SubBreed: Indian,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Beagle: [
+      {
+        SuperBreed: Beagle,
+        SubBreed: null,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Bulldog: [
+      {
+        SuperBreed: Bulldog,
+        SubBreed: Boston,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Bulldog,
+        SubBreed: English,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Bulldog,
+        SubBreed: French,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Bullterrier: [
+      {
+        SuperBreed: Bullterrier,
+        SubBreed: Staffordshire,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Cattledog: [
+      {
+        SuperBreed: Cattledog,
+        SubBreed: Australian,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Cavapoo: [
+      {
+        SuperBreed: Cavapoo,
+        SubBreed: null,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Chihuahua: [
+      {
+        SuperBreed: Chihuahua,
+        SubBreed: null,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Retriever: [
+      {
+        SuperBreed: Retriever,
+        SubBreed: Chesapeake,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Retriever,
+        SubBreed: Curly,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Retriever,
+        SubBreed: Flatcoated,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Retriever,
+        SubBreed: Golden,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Rottweiler: [
+      {
+        SuperBreed: Rottweiler,
+        SubBreed: null,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ],
+    Terrier: [
+      {
+        SuperBreed: Terrier,
+        SubBreed: American,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Australian,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Bedlington,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Border,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Cairn,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Dandie,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Fox,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Irish,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Kerryblue,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Lakeland,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Norfolk,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Norwich,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Patterdale,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Russell,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Scottish,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Sealyham,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Silky,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Tibetan,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Toy,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Welsh,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Westhighland,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Wheaten,
+        ImageCount: 3,
+        Recognizability: null
+      },
+      {
+        SuperBreed: Terrier,
+        SubBreed: Yorkshire,
+        ImageCount: 3,
+        Recognizability: null
+      }
+    ]
+  }
+}

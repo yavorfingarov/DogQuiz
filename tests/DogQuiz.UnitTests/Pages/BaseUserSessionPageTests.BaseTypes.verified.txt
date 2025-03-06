@@ -1,0 +1,8 @@
+﻿[
+  AboutModel : PageModel,
+  BaseUserSessionPageModel : PageModel,
+  ErrorModel : PageModel,
+  IndexModel : BaseUserSessionPageModel,
+  QuizModel : BaseUserSessionPageModel,
+  ResultModel : BaseUserSessionPageModel
+]

@@ -1,0 +1,17 @@
+﻿{
+  actionResult: {
+    StatusCode: 400
+  },
+  PageModel: {
+    Images: null,
+    Breeds: null,
+    Answers: null
+  },
+  Headers: {},
+  userSessions: [],
+  quizzes: [],
+  quizQuestionBreedIds: [],
+  quizAnswers: [],
+  quizResults: [],
+  updatedBreeds: []
+}

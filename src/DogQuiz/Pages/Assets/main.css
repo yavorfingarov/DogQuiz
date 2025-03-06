@@ -1,0 +1,50 @@
+@import url("../../node_modules/@picocss/pico/css/pico.cyan.css");
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    user-select: none;
+}
+
+footer {
+    opacity: 0.7;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-end {
+    text-align: end;
+}
+
+.selectable {
+    user-select: text;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    img {
+        filter: brightness(0.8) contrast(1.2);
+    }
+}

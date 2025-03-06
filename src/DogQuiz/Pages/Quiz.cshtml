@@ -1,0 +1,50 @@
+﻿@page "/quiz/{quizId}"
+@model QuizModel
+
+<partial name="_NoJavaScriptPartial" />
+<form method="post" x-data="{ page: 0, values: [] }" x-cloak>
+    @for (var i = 0; i < Model.Images.Count; i++)
+    {
+        <fieldset x-show="page === @i">
+            <section>
+                <div class="image-container">
+                    <img src="/@(Model.Images[i]).jpg" alt="Dog" />
+                </div>
+            </section>
+            <select class="select-breed" asp-for="Answers[i]" x-on:change="values[page] = $el.value"></select>
+        </fieldset>
+    }
+    <fieldset>
+        <section>
+            <progress x-bind:value="page + 1" max="@Model.Images.Count">
+                <span x-text="page"></span> / @Model.Images.Count
+            </progress>
+        </section>
+        <fieldset role="group">
+            <button type="button" class="secondary" x-bind:disabled="page === 0" x-on:click="page--">Back</button>
+            <button type="button" x-bind:disabled="!values[page] || page === @(Model.Images.Count - 1)" x-on:click="page++">Next</button>
+        </fieldset>
+        <button type="submit" x-bind:disabled="values.length !== @Model.Images.Count">Submit</button>
+    </fieldset>
+</form>
+<template x-data="quizDropdownTemplate">
+    <option selected disabled value="">
+        Select breed...
+    </option>
+    @foreach (var superBreed in Model.Breeds.Keys.OrderBy(x => x))
+    {
+        @if (Model.Breeds[superBreed].Count == 1 && Model.Breeds[superBreed][0].SubBreed == null)
+        {
+            <option value="@Model.Breeds[superBreed][0].Id">@superBreed</option>
+        }
+        else
+        {
+            <optgroup label="@superBreed">
+                @foreach (var breed in Model.Breeds[superBreed].OrderBy(x => x.SubBreed))
+                {
+                    <option value="@breed.Id">@breed.SubBreed</option>
+                }
+            </optgroup>
+        }
+    }
+</template>

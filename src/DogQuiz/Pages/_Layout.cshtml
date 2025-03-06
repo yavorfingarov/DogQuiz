@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="How many dog breeds can you recognize?" />
+    <meta name="keywords" content="quiz, dogs, breeds, images" />
+    <meta name="author" content="Yavor Fingarov" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#13171f" />
+    <title>DogQuiz</title>
+    <link rel="icon" href="/favicon.ico" sizes="48x48" asp-append-version="true" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" asp-append-version="true" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" asp-append-version="true" />
+    <link rel="stylesheet" href="/main.css" asp-append-version="true">
+    <script defer src="/main.js" asp-append-version="true"></script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a class="contrast" asp-page="/Index">
+                        <strong>DogQuiz</strong>
+                    </a> 
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a asp-page="/About">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    <footer class="container">
+        <small>
+            <p class="align-center">
+                <a asp-page="/Privacy">Privacy</a> /
+                <a href="https://github.com/yavorfingarov/DogQuiz">GitHub</a>
+            </p>
+        </small>
+    </footer>
+</body>
+</html>

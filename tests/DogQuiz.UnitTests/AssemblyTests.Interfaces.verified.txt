@@ -1,0 +1,6 @@
+﻿[
+  DogQuiz.Common.IIdGenerator,
+  DogQuiz.Data.IDataCleaner,
+  DogQuiz.Data.IDataLoader,
+  DogQuiz.Data.IDogApi
+]

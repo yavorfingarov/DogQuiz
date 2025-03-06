@@ -1,0 +1,37 @@
+﻿{
+  actionResult: {
+    StatusCode: 404
+  },
+  PageModel: {
+    Images: null,
+    Breeds: null,
+    Answers: [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+02:00,
+      id: testUserSessionId
+    }
+  ],
+  quizzes: [],
+  quizQuestionBreedIds: [],
+  quizAnswers: [],
+  quizResults: [],
+  updatedBreeds: []
+}

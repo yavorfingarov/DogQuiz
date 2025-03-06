@@ -1,0 +1,19 @@
+﻿[
+  DogQuiz.Common.Configuration,
+  DogQuiz.Common.IdGenerator,
+  DogQuiz.Data.DataCleaner,
+  DogQuiz.Data.DataLoader,
+  DogQuiz.Data.DataManager,
+  DogQuiz.Data.DogApi,
+  DogQuiz.Data.DogApi+Response`1,
+  DogQuiz.Infrastructure.HealthEndpoint,
+  DogQuiz.Pages.AboutModel,
+  DogQuiz.Pages.AboutModel+BreedSummary,
+  DogQuiz.Pages.ErrorModel,
+  DogQuiz.Pages.IndexModel,
+  DogQuiz.Pages.IndexModel+Result,
+  DogQuiz.Pages.QuizModel,
+  DogQuiz.Pages.QuizModel+Breed,
+  DogQuiz.Pages.ResultModel,
+  DogQuiz.Pages.ResultModel+Answer
+]

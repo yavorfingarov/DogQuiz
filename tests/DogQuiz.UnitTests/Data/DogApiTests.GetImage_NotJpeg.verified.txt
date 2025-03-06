@@ -1,0 +1,4 @@
+﻿{
+  Type: InvalidOperationException,
+  Message: Fetched an unexpected media type 'image/png' for 'https://testing.dog.ceo/api/image1.jpg'.
+}

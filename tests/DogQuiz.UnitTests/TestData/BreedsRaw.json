@@ -1,0 +1,59 @@
+{
+    "message": {
+        "appenzeller": [],
+        "australian": [
+            "kelpie",
+            "shepherd"
+        ],
+        "bakharwal": [
+            "indian"
+        ],
+        "beagle": [],
+        "bulldog": [
+            "boston",
+            "english",
+            "french"
+        ],
+        "bullterrier": [
+            "staffordshire"
+        ],
+        "cattledog": [
+            "australian"
+        ],
+        "cavapoo": [],
+        "chihuahua": [],
+        "rottweiler": [],
+        "retriever": [
+            "chesapeake",
+            "curly",
+            "flatcoated",
+            "golden"
+        ],
+        "terrier": [
+            "american",
+            "australian",
+            "bedlington",
+            "border",
+            "cairn",
+            "dandie",
+            "fox",
+            "irish",
+            "kerryblue",
+            "lakeland",
+            "norfolk",
+            "norwich",
+            "patterdale",
+            "russell",
+            "scottish",
+            "sealyham",
+            "silky",
+            "tibetan",
+            "toy",
+            "welsh",
+            "westhighland",
+            "wheaten",
+            "yorkshire"
+        ]
+    },
+    "status": "success"
+}

@@ -1,0 +1,9 @@
+﻿[
+  {
+    correct_answers: 0,
+    id: 1000,
+    questions: 0,
+    sub_breed_id: null,
+    super_breed_id: 1
+  }
+]

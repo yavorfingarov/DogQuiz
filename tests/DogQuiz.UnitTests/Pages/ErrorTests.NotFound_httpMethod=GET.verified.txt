@@ -1,0 +1,30 @@
+﻿{
+  target: {
+    Message: Not found,
+    ShowCookieHint: false
+  },
+  log: {
+    Information: Error handled. Request: GET /status-code-re-execute/path | Status code: 404 | HasAntiforgeryToken: True | UserSessionId: testUserSessionId,
+    Category: ErrorModel,
+    State: [
+      {
+        Method: GET
+      },
+      {
+        Path: /status-code-re-execute/path
+      },
+      {
+        StatusCode: 404
+      },
+      {
+        HasAntiforgeryToken: true
+      },
+      {
+        UserSessionId: testUserSessionId
+      },
+      {
+        {OriginalFormat}: Error handled. Request: {Method} {Path} | Status code: {StatusCode} | HasAntiforgeryToken: {HasAntiforgeryToken} | UserSessionId: {UserSessionId}
+      }
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+﻿{
+  actionResult: {
+    ContentType: null,
+    Model: null,
+    Page: null,
+    ViewData: null,
+    StatusCode: null
+  },
+  PageModel: {
+    Images: [
+      6007_Bullterrier_Staffordshire_0,
+      12016_Terrier_Border_0,
+      12019_Terrier_Fox_1,
+      10012_Retriever_Golden_1,
+      11000_Rottweiler_2,
+      2002_Australian_Shepherd_0,
+      9000_Chihuahua_1,
+      12022_Terrier_Lakeland_0,
+      12029_Terrier_Silky_1,
+      12032_Terrier_Welsh_0
+    ],
+    Breeds: {
+      Appenzeller: [
+        {
+          Id: 1000,
+          SuperBreed: Appenzeller,
+          SubBreed: null
+        }
+      ],
+      Australian: [
+        {
+          Id: 2001,
+          SuperBreed: Australian,
+          SubBreed: Kelpie
+        },
+        {
+          Id: 2002,
+          SuperBreed: Australian,
+          SubBreed: Shepherd
+        }
+      ],
+      Bakharwal: [
+        {
+          Id: 3003,
+          SuperBreed: Bakharwal,
+          SubBreed: Indian
+        }
+      ],
+      Beagle: [
+        {
+          Id: 4000,
+          SuperBreed: Beagle,
+          SubBreed: null
+        }
+      ],
+      Bulldog: [
+        {
+          Id: 5004,
+          SuperBreed: Bulldog,
+          SubBreed: Boston
+        },
+        {
+          Id: 5005,
+          SuperBreed: Bulldog,
+          SubBreed: English
+        },
+        {
+          Id: 5006,
+          SuperBreed: Bulldog,
+          SubBreed: French
+        }
+      ],
+      Bullterrier: [
+        {
+          Id: 6007,
+          SuperBreed: Bullterrier,
+          SubBreed: Staffordshire
+        }
+      ],
+      Cattledog: [
+        {
+          Id: 7008,
+          SuperBreed: Cattledog,
+          SubBreed: Australian
+        }
+      ],
+      Cavapoo: [
+        {
+          Id: 8000,
+          SuperBreed: Cavapoo,
+          SubBreed: null
+        }
+      ],
+      Chihuahua: [
+        {
+          Id: 9000,
+          SuperBreed: Chihuahua,
+          SubBreed: null
+        }
+      ],
+      Retriever: [
+        {
+          Id: 10009,
+          SuperBreed: Retriever,
+          SubBreed: Chesapeake
+        },
+        {
+          Id: 10010,
+          SuperBreed: Retriever,
+          SubBreed: Curly
+        },
+        {
+          Id: 10011,
+          SuperBreed: Retriever,
+          SubBreed: Flatcoated
+        },
+        {
+          Id: 10012,
+          SuperBreed: Retriever,
+          SubBreed: Golden
+        }
+      ],
+      Rottweiler: [
+        {
+          Id: 11000,
+          SuperBreed: Rottweiler,
+          SubBreed: null
+        }
+      ],
+      Terrier: [
+        {
+          Id: 12013,
+          SuperBreed: Terrier,
+          SubBreed: American
+        },
+        {
+          Id: 12014,
+          SuperBreed: Terrier,
+          SubBreed: Australian
+        },
+        {
+          Id: 12015,
+          SuperBreed: Terrier,
+          SubBreed: Bedlington
+        },
+        {
+          Id: 12016,
+          SuperBreed: Terrier,
+          SubBreed: Border
+        },
+        {
+          Id: 12017,
+          SuperBreed: Terrier,
+          SubBreed: Cairn
+        },
+        {
+          Id: 12018,
+          SuperBreed: Terrier,
+          SubBreed: Dandie
+        },
+        {
+          Id: 12019,
+          SuperBreed: Terrier,
+          SubBreed: Fox
+        },
+        {
+          Id: 12020,
+          SuperBreed: Terrier,
+          SubBreed: Irish
+        },
+        {
+          Id: 12021,
+          SuperBreed: Terrier,
+          SubBreed: Kerryblue
+        },
+        {
+          Id: 12022,
+          SuperBreed: Terrier,
+          SubBreed: Lakeland
+        },
+        {
+          Id: 12023,
+          SuperBreed: Terrier,
+          SubBreed: Norfolk
+        },
+        {
+          Id: 12024,
+          SuperBreed: Terrier,
+          SubBreed: Norwich
+        },
+        {
+          Id: 12025,
+          SuperBreed: Terrier,
+          SubBreed: Patterdale
+        },
+        {
+          Id: 12026,
+          SuperBreed: Terrier,
+          SubBreed: Russell
+        },
+        {
+          Id: 12027,
+          SuperBreed: Terrier,
+          SubBreed: Scottish
+        },
+        {
+          Id: 12028,
+          SuperBreed: Terrier,
+          SubBreed: Sealyham
+        },
+        {
+          Id: 12029,
+          SuperBreed: Terrier,
+          SubBreed: Silky
+        },
+        {
+          Id: 12030,
+          SuperBreed: Terrier,
+          SubBreed: Tibetan
+        },
+        {
+          Id: 12031,
+          SuperBreed: Terrier,
+          SubBreed: Toy
+        },
+        {
+          Id: 12032,
+          SuperBreed: Terrier,
+          SubBreed: Welsh
+        },
+        {
+          Id: 12033,
+          SuperBreed: Terrier,
+          SubBreed: Westhighland
+        },
+        {
+          Id: 12034,
+          SuperBreed: Terrier,
+          SubBreed: Wheaten
+        },
+        {
+          Id: 12035,
+          SuperBreed: Terrier,
+          SubBreed: Yorkshire
+        }
+      ]
+    },
+    Answers: [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+02:00,
+      id: testUserSessionId
+    }
+  ],
+  quizzes: [
+    {
+      expiration: 2024-12-13 21:35:00,
+      id: testQuizId
+    }
+  ],
+  quizQuestionBreedIds: [
+    {
+      breed_id: 6007
+    },
+    {
+      breed_id: 12016
+    },
+    {
+      breed_id: 12019
+    },
+    {
+      breed_id: 10012
+    },
+    {
+      breed_id: 11000
+    },
+    {
+      breed_id: 2002
+    },
+    {
+      breed_id: 9000
+    },
+    {
+      breed_id: 12022
+    },
+    {
+      breed_id: 12029
+    },
+    {
+      breed_id: 12032
+    }
+  ],
+  quizAnswers: [],
+  quizResults: [],
+  updatedBreeds: []
+}

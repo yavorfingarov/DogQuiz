@@ -1,0 +1,73 @@
+﻿{
+  actionResult: {
+    StatusCode: 400
+  },
+  PageModel: {
+    Images: null,
+    Breeds: null,
+    Answers: [
+      6007,
+      12016,
+      12019,
+      10012,
+      11000,
+      10,
+      9000,
+      2002,
+      12034,
+      12021
+    ]
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+02:00,
+      id: testUserSessionId
+    }
+  ],
+  quizzes: [
+    {
+      expiration: 2024-12-13 21:35:00,
+      id: testQuizId
+    }
+  ],
+  quizQuestionBreedIds: [
+    {
+      breed_id: 6007
+    },
+    {
+      breed_id: 12016
+    },
+    {
+      breed_id: 12019
+    },
+    {
+      breed_id: 10012
+    },
+    {
+      breed_id: 11000
+    },
+    {
+      breed_id: 2002
+    },
+    {
+      breed_id: 9000
+    },
+    {
+      breed_id: 12022
+    },
+    {
+      breed_id: 12029
+    },
+    {
+      breed_id: 12032
+    }
+  ],
+  quizAnswers: [],
+  quizResults: [],
+  updatedBreeds: []
+}

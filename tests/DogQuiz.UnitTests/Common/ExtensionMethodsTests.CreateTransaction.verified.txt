@@ -1,0 +1,14 @@
+﻿[
+  {
+    Method: IDbConnection.get_State(),
+    Arguments: []
+  },
+  {
+    Method: IDbConnection.Open(),
+    Arguments: []
+  },
+  {
+    Method: IDbConnection.BeginTransaction(),
+    Arguments: []
+  }
+]

@@ -1,0 +1,21 @@
+﻿@page "/error"
+@model ErrorModel
+
+<hgroup class ="align-center">
+    <h1>@Response.StatusCode</h1>
+    <p>@Model.Message</p>
+</hgroup>
+<p class="align-center">
+    <small>
+        Request ID: <code class="selectable">@HttpContext.TraceIdentifier</code>
+    </small>
+</p>
+@if (Model.ShowCookieHint)
+{
+    <p>
+        <small>
+            Please make sure you have enabled cookies.
+            Check the <a asp-page="/Privacy">privacy</a> section for more information.
+        </small>
+    </p>
+}

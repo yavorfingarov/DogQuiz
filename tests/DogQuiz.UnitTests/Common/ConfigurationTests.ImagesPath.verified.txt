@@ -1,0 +1,10 @@
+﻿[
+  {
+    AllowEmptyStrings: false,
+    RequiresValidationContext: false,
+    ErrorMessage: null,
+    ErrorMessageResourceName: null,
+    ErrorMessageResourceType: null,
+    TypeId: RequiredAttribute
+  }
+]

@@ -1,0 +1,8 @@
+﻿{
+    "message": [
+        "https://testing.dog.ceo/api/image1.jpg",
+        "https://testing.dog.ceo/api/image2.jpg",
+        "https://testing.dog.ceo/api/image3.jpg"
+    ],
+    "status": "success"
+}

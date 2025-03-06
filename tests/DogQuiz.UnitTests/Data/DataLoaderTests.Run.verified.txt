@@ -1,0 +1,1079 @@
+﻿{
+  target: {
+    superBreeds: [
+      {
+        display_name: Appenzeller,
+        id: 1
+      },
+      {
+        display_name: Australian,
+        id: 2
+      },
+      {
+        display_name: Bakharwal,
+        id: 3
+      },
+      {
+        display_name: Beagle,
+        id: 4
+      },
+      {
+        display_name: Bulldog,
+        id: 5
+      },
+      {
+        display_name: Bullterrier,
+        id: 6
+      },
+      {
+        display_name: Cattledog,
+        id: 7
+      },
+      {
+        display_name: Cavapoo,
+        id: 8
+      },
+      {
+        display_name: Chihuahua,
+        id: 9
+      },
+      {
+        display_name: Retriever,
+        id: 10
+      },
+      {
+        display_name: Rottweiler,
+        id: 11
+      },
+      {
+        display_name: Terrier,
+        id: 12
+      }
+    ],
+    subBreeds: [
+      {
+        display_name: Kelpie,
+        id: 1,
+        super_breed_id: 2
+      },
+      {
+        display_name: Shepherd,
+        id: 2,
+        super_breed_id: 2
+      },
+      {
+        display_name: Indian,
+        id: 3,
+        super_breed_id: 3
+      },
+      {
+        display_name: Boston,
+        id: 4,
+        super_breed_id: 5
+      },
+      {
+        display_name: English,
+        id: 5,
+        super_breed_id: 5
+      },
+      {
+        display_name: French,
+        id: 6,
+        super_breed_id: 5
+      },
+      {
+        display_name: Staffordshire,
+        id: 7,
+        super_breed_id: 6
+      },
+      {
+        display_name: Australian,
+        id: 8,
+        super_breed_id: 7
+      },
+      {
+        display_name: Chesapeake,
+        id: 9,
+        super_breed_id: 10
+      },
+      {
+        display_name: Curly,
+        id: 10,
+        super_breed_id: 10
+      },
+      {
+        display_name: Flatcoated,
+        id: 11,
+        super_breed_id: 10
+      },
+      {
+        display_name: Golden,
+        id: 12,
+        super_breed_id: 10
+      },
+      {
+        display_name: American,
+        id: 13,
+        super_breed_id: 12
+      },
+      {
+        display_name: Australian,
+        id: 14,
+        super_breed_id: 12
+      },
+      {
+        display_name: Bedlington,
+        id: 15,
+        super_breed_id: 12
+      },
+      {
+        display_name: Border,
+        id: 16,
+        super_breed_id: 12
+      },
+      {
+        display_name: Cairn,
+        id: 17,
+        super_breed_id: 12
+      },
+      {
+        display_name: Dandie,
+        id: 18,
+        super_breed_id: 12
+      },
+      {
+        display_name: Fox,
+        id: 19,
+        super_breed_id: 12
+      },
+      {
+        display_name: Irish,
+        id: 20,
+        super_breed_id: 12
+      },
+      {
+        display_name: Kerryblue,
+        id: 21,
+        super_breed_id: 12
+      },
+      {
+        display_name: Lakeland,
+        id: 22,
+        super_breed_id: 12
+      },
+      {
+        display_name: Norfolk,
+        id: 23,
+        super_breed_id: 12
+      },
+      {
+        display_name: Norwich,
+        id: 24,
+        super_breed_id: 12
+      },
+      {
+        display_name: Patterdale,
+        id: 25,
+        super_breed_id: 12
+      },
+      {
+        display_name: Russell,
+        id: 26,
+        super_breed_id: 12
+      },
+      {
+        display_name: Scottish,
+        id: 27,
+        super_breed_id: 12
+      },
+      {
+        display_name: Sealyham,
+        id: 28,
+        super_breed_id: 12
+      },
+      {
+        display_name: Silky,
+        id: 29,
+        super_breed_id: 12
+      },
+      {
+        display_name: Tibetan,
+        id: 30,
+        super_breed_id: 12
+      },
+      {
+        display_name: Toy,
+        id: 31,
+        super_breed_id: 12
+      },
+      {
+        display_name: Welsh,
+        id: 32,
+        super_breed_id: 12
+      },
+      {
+        display_name: Westhighland,
+        id: 33,
+        super_breed_id: 12
+      },
+      {
+        display_name: Wheaten,
+        id: 34,
+        super_breed_id: 12
+      },
+      {
+        display_name: Yorkshire,
+        id: 35,
+        super_breed_id: 12
+      }
+    ],
+    breeds: [
+      {
+        correct_answers: 0,
+        id: 1000,
+        questions: 0,
+        sub_breed_id: null,
+        super_breed_id: 1
+      },
+      {
+        correct_answers: 0,
+        id: 2001,
+        questions: 0,
+        sub_breed_id: 1,
+        super_breed_id: 2
+      },
+      {
+        correct_answers: 0,
+        id: 2002,
+        questions: 0,
+        sub_breed_id: 2,
+        super_breed_id: 2
+      },
+      {
+        correct_answers: 0,
+        id: 3003,
+        questions: 0,
+        sub_breed_id: 3,
+        super_breed_id: 3
+      },
+      {
+        correct_answers: 0,
+        id: 4000,
+        questions: 0,
+        sub_breed_id: null,
+        super_breed_id: 4
+      },
+      {
+        correct_answers: 0,
+        id: 5004,
+        questions: 0,
+        sub_breed_id: 4,
+        super_breed_id: 5
+      },
+      {
+        correct_answers: 0,
+        id: 5005,
+        questions: 0,
+        sub_breed_id: 5,
+        super_breed_id: 5
+      },
+      {
+        correct_answers: 0,
+        id: 5006,
+        questions: 0,
+        sub_breed_id: 6,
+        super_breed_id: 5
+      },
+      {
+        correct_answers: 0,
+        id: 6007,
+        questions: 0,
+        sub_breed_id: 7,
+        super_breed_id: 6
+      },
+      {
+        correct_answers: 0,
+        id: 7008,
+        questions: 0,
+        sub_breed_id: 8,
+        super_breed_id: 7
+      },
+      {
+        correct_answers: 0,
+        id: 8000,
+        questions: 0,
+        sub_breed_id: null,
+        super_breed_id: 8
+      },
+      {
+        correct_answers: 0,
+        id: 9000,
+        questions: 0,
+        sub_breed_id: null,
+        super_breed_id: 9
+      },
+      {
+        correct_answers: 0,
+        id: 10009,
+        questions: 0,
+        sub_breed_id: 9,
+        super_breed_id: 10
+      },
+      {
+        correct_answers: 0,
+        id: 10010,
+        questions: 0,
+        sub_breed_id: 10,
+        super_breed_id: 10
+      },
+      {
+        correct_answers: 0,
+        id: 10011,
+        questions: 0,
+        sub_breed_id: 11,
+        super_breed_id: 10
+      },
+      {
+        correct_answers: 0,
+        id: 10012,
+        questions: 0,
+        sub_breed_id: 12,
+        super_breed_id: 10
+      },
+      {
+        correct_answers: 0,
+        id: 11000,
+        questions: 0,
+        sub_breed_id: null,
+        super_breed_id: 11
+      },
+      {
+        correct_answers: 0,
+        id: 12013,
+        questions: 0,
+        sub_breed_id: 13,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12014,
+        questions: 0,
+        sub_breed_id: 14,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12015,
+        questions: 0,
+        sub_breed_id: 15,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12016,
+        questions: 0,
+        sub_breed_id: 16,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12017,
+        questions: 0,
+        sub_breed_id: 17,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12018,
+        questions: 0,
+        sub_breed_id: 18,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12019,
+        questions: 0,
+        sub_breed_id: 19,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12020,
+        questions: 0,
+        sub_breed_id: 20,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12021,
+        questions: 0,
+        sub_breed_id: 21,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12022,
+        questions: 0,
+        sub_breed_id: 22,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12023,
+        questions: 0,
+        sub_breed_id: 23,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12024,
+        questions: 0,
+        sub_breed_id: 24,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12025,
+        questions: 0,
+        sub_breed_id: 25,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12026,
+        questions: 0,
+        sub_breed_id: 26,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12027,
+        questions: 0,
+        sub_breed_id: 27,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12028,
+        questions: 0,
+        sub_breed_id: 28,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12029,
+        questions: 0,
+        sub_breed_id: 29,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12030,
+        questions: 0,
+        sub_breed_id: 30,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12031,
+        questions: 0,
+        sub_breed_id: 31,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12032,
+        questions: 0,
+        sub_breed_id: 32,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12033,
+        questions: 0,
+        sub_breed_id: 33,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12034,
+        questions: 0,
+        sub_breed_id: 34,
+        super_breed_id: 12
+      },
+      {
+        correct_answers: 0,
+        id: 12035,
+        questions: 0,
+        sub_breed_id: 35,
+        super_breed_id: 12
+      }
+    ],
+    images: [
+      {
+        breed_id: 1000,
+        file_version: 1,
+        filename: guid1,
+        id: 1,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 1000,
+        file_version: 1,
+        filename: guid2,
+        id: 2,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 2001,
+        file_version: 1,
+        filename: guid3,
+        id: 3,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 2001,
+        file_version: 1,
+        filename: guid4,
+        id: 4,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 2002,
+        file_version: 1,
+        filename: guid5,
+        id: 5,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 2002,
+        file_version: 1,
+        filename: guid6,
+        id: 6,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 3003,
+        file_version: 1,
+        filename: guid7,
+        id: 7,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 3003,
+        file_version: 1,
+        filename: guid8,
+        id: 8,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 4000,
+        file_version: 1,
+        filename: guid9,
+        id: 9,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 4000,
+        file_version: 1,
+        filename: guid10,
+        id: 10,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 5004,
+        file_version: 1,
+        filename: guid11,
+        id: 11,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 5004,
+        file_version: 1,
+        filename: guid12,
+        id: 12,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 5005,
+        file_version: 1,
+        filename: guid13,
+        id: 13,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 5005,
+        file_version: 1,
+        filename: guid14,
+        id: 14,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 5006,
+        file_version: 1,
+        filename: guid15,
+        id: 15,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 5006,
+        file_version: 1,
+        filename: guid16,
+        id: 16,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 6007,
+        file_version: 1,
+        filename: guid17,
+        id: 17,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 6007,
+        file_version: 1,
+        filename: guid18,
+        id: 18,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 7008,
+        file_version: 1,
+        filename: guid19,
+        id: 19,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 7008,
+        file_version: 1,
+        filename: guid20,
+        id: 20,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 8000,
+        file_version: 1,
+        filename: guid21,
+        id: 21,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 8000,
+        file_version: 1,
+        filename: guid22,
+        id: 22,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 9000,
+        file_version: 1,
+        filename: guid23,
+        id: 23,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 9000,
+        file_version: 1,
+        filename: guid24,
+        id: 24,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 10009,
+        file_version: 1,
+        filename: guid25,
+        id: 25,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 10009,
+        file_version: 1,
+        filename: guid26,
+        id: 26,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 10010,
+        file_version: 1,
+        filename: guid27,
+        id: 27,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 10010,
+        file_version: 1,
+        filename: guid28,
+        id: 28,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 10011,
+        file_version: 1,
+        filename: guid29,
+        id: 29,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 10011,
+        file_version: 1,
+        filename: guid30,
+        id: 30,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 10012,
+        file_version: 1,
+        filename: guid31,
+        id: 31,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 10012,
+        file_version: 1,
+        filename: guid32,
+        id: 32,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 11000,
+        file_version: 1,
+        filename: guid33,
+        id: 33,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 11000,
+        file_version: 1,
+        filename: guid34,
+        id: 34,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12013,
+        file_version: 1,
+        filename: guid35,
+        id: 35,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12013,
+        file_version: 1,
+        filename: guid36,
+        id: 36,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12014,
+        file_version: 1,
+        filename: guid37,
+        id: 37,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12014,
+        file_version: 1,
+        filename: guid38,
+        id: 38,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12015,
+        file_version: 1,
+        filename: guid39,
+        id: 39,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12015,
+        file_version: 1,
+        filename: guid40,
+        id: 40,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12016,
+        file_version: 1,
+        filename: guid41,
+        id: 41,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12016,
+        file_version: 1,
+        filename: guid42,
+        id: 42,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12017,
+        file_version: 1,
+        filename: guid43,
+        id: 43,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12017,
+        file_version: 1,
+        filename: guid44,
+        id: 44,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12018,
+        file_version: 1,
+        filename: guid45,
+        id: 45,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12018,
+        file_version: 1,
+        filename: guid46,
+        id: 46,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12019,
+        file_version: 1,
+        filename: guid47,
+        id: 47,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12019,
+        file_version: 1,
+        filename: guid48,
+        id: 48,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12020,
+        file_version: 1,
+        filename: guid49,
+        id: 49,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12020,
+        file_version: 1,
+        filename: guid50,
+        id: 50,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12021,
+        file_version: 1,
+        filename: guid51,
+        id: 51,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12021,
+        file_version: 1,
+        filename: guid52,
+        id: 52,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12022,
+        file_version: 1,
+        filename: guid53,
+        id: 53,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12022,
+        file_version: 1,
+        filename: guid54,
+        id: 54,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12023,
+        file_version: 1,
+        filename: guid55,
+        id: 55,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12023,
+        file_version: 1,
+        filename: guid56,
+        id: 56,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12024,
+        file_version: 1,
+        filename: guid57,
+        id: 57,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12024,
+        file_version: 1,
+        filename: guid58,
+        id: 58,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12025,
+        file_version: 1,
+        filename: guid59,
+        id: 59,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12025,
+        file_version: 1,
+        filename: guid60,
+        id: 60,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12026,
+        file_version: 1,
+        filename: guid61,
+        id: 61,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12026,
+        file_version: 1,
+        filename: guid62,
+        id: 62,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12027,
+        file_version: 1,
+        filename: guid63,
+        id: 63,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12027,
+        file_version: 1,
+        filename: guid64,
+        id: 64,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12028,
+        file_version: 1,
+        filename: guid65,
+        id: 65,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12028,
+        file_version: 1,
+        filename: guid66,
+        id: 66,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12029,
+        file_version: 1,
+        filename: guid67,
+        id: 67,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12029,
+        file_version: 1,
+        filename: guid68,
+        id: 68,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12030,
+        file_version: 1,
+        filename: guid69,
+        id: 69,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12030,
+        file_version: 1,
+        filename: guid70,
+        id: 70,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12031,
+        file_version: 1,
+        filename: guid71,
+        id: 71,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12031,
+        file_version: 1,
+        filename: guid72,
+        id: 72,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12032,
+        file_version: 1,
+        filename: guid73,
+        id: 73,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12032,
+        file_version: 1,
+        filename: guid74,
+        id: 74,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12033,
+        file_version: 1,
+        filename: guid75,
+        id: 75,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12033,
+        file_version: 1,
+        filename: guid76,
+        id: 76,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12034,
+        file_version: 1,
+        filename: guid77,
+        id: 77,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12034,
+        file_version: 1,
+        filename: guid78,
+        id: 78,
+        source_url: https://testing.dog.ceo/api/image3
+      },
+      {
+        breed_id: 12035,
+        file_version: 1,
+        filename: guid79,
+        id: 79,
+        source_url: https://testing.dog.ceo/api/image2
+      },
+      {
+        breed_id: 12035,
+        file_version: 1,
+        filename: guid80,
+        id: 80,
+        source_url: https://testing.dog.ceo/api/image3
+      }
+    ]
+  },
+  log: {
+    Information: Data load finished.,
+    Category: DataLoader
+  }
+}

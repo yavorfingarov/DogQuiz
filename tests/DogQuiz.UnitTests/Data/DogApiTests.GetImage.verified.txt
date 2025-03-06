@@ -1,0 +1,13 @@
+﻿[
+  {
+    Status: null,
+    Request: https://testing.dog.ceo/api/image1.jpg,
+    Response: {
+      Status: 200 OK,
+      ContentHeaders: {
+        Content-Length: 2294,
+        Content-Type: image/jpeg
+      }
+    }
+  }
+]

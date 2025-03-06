@@ -1,0 +1,21 @@
+﻿{
+  actionResult: {
+    StatusCode: 404
+  },
+  PageModel: {
+    Score: null,
+    Answers: null,
+    ShareUrl: null
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+02:00,
+      id: testUserSessionId
+    }
+  ]
+}

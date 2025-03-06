@@ -1,0 +1,130 @@
+﻿{
+  Calls: [
+    {
+      Status: null,
+      Request: https://testing.dog.ceo/api/breeds/list/all,
+      Response: {
+        Status: 200 OK,
+        ContentHeaders: {
+          Content-Length: 1281,
+          Content-Type: application/json
+        },
+        ContentStringParsed: {
+          message: {
+            appenzeller: [],
+            australian: [
+              kelpie,
+              shepherd
+            ],
+            bakharwal: [
+              indian
+            ],
+            beagle: [],
+            bulldog: [
+              boston,
+              english,
+              french
+            ],
+            bullterrier: [
+              staffordshire
+            ],
+            cattledog: [
+              australian
+            ],
+            cavapoo: [],
+            chihuahua: [],
+            rottweiler: [],
+            retriever: [
+              chesapeake,
+              curly,
+              flatcoated,
+              golden
+            ],
+            terrier: [
+              american,
+              australian,
+              bedlington,
+              border,
+              cairn,
+              dandie,
+              fox,
+              irish,
+              kerryblue,
+              lakeland,
+              norfolk,
+              norwich,
+              patterdale,
+              russell,
+              scottish,
+              sealyham,
+              silky,
+              tibetan,
+              toy,
+              welsh,
+              westhighland,
+              wheaten,
+              yorkshire
+            ]
+          },
+          status: success
+        }
+      }
+    }
+  ],
+  breeds: {
+    Appenzeller: [],
+    Australian: [
+      Kelpie,
+      Shepherd
+    ],
+    Bakharwal: [
+      Indian
+    ],
+    Beagle: [],
+    Bulldog: [
+      Boston,
+      English,
+      French
+    ],
+    Bullterrier: [
+      Staffordshire
+    ],
+    Cattledog: [
+      Australian
+    ],
+    Cavapoo: [],
+    Chihuahua: [],
+    Retriever: [
+      Chesapeake,
+      Curly,
+      Flatcoated,
+      Golden
+    ],
+    Rottweiler: [],
+    Terrier: [
+      American,
+      Australian,
+      Bedlington,
+      Border,
+      Cairn,
+      Dandie,
+      Fox,
+      Irish,
+      Kerryblue,
+      Lakeland,
+      Norfolk,
+      Norwich,
+      Patterdale,
+      Russell,
+      Scottish,
+      Sealyham,
+      Silky,
+      Tibetan,
+      Toy,
+      Welsh,
+      Westhighland,
+      Wheaten,
+      Yorkshire
+    ]
+  }
+}

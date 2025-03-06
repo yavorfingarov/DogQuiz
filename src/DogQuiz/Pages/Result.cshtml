@@ -1,0 +1,49 @@
+﻿@page "/quiz/{quizId}/result"
+@model ResultModel
+@{
+    var verb = (Model.Score == 100) ? "match" : "beat";
+    var score = Model.Score.ToPercent();
+    var shareData = Html.Raw($"{{title: 'DogQuiz', text: 'I scored {score}. Can you {verb} that?', url: '{Model.ShareUrl}' }}");
+}
+
+<h1 class="align-center">Score: @score</h1>
+<partial name="_NoJavaScriptPartial" />
+<section x-data="{ page: 0 }" x-cloak>
+    @for (var i = 0; i < Model.Answers.Count; i++)
+    {
+        <section x-show="page === @i">
+            <section>
+                <div class="image-container">
+                    <img src="/@(Model.Answers[i].ImageFilename).jpg" alt="Dog" />
+                </div>
+            </section>
+            @if (Model.Answers[i].Given != Model.Answers[i].Correct)
+            {
+                <p class="align-center selectable">
+                    <del>@Model.Answers[i].Given</del>
+                </p>
+            }
+            else
+            {
+                <p>&nbsp;</p>
+            }
+            <p class="align-center selectable">
+                <ins>@Model.Answers[i].Correct</ins>
+            </p>
+            <section>
+                <progress x-bind:value="page + 1" max="@Model.Answers.Count">
+                    <span x-text="page"></span> /
+                    @Model.Answers.Count
+                </progress>
+            </section>
+            <fieldset role="group">
+                <button type="button" class="secondary" x-bind:disabled="page === 0" x-on:click="page--">Back</button>
+                <button type="button" x-bind:disabled="page === @(Model.Answers.Count - 1)" x-on:click="page++">Next</button>
+            </fieldset>
+        </section>
+    }
+    <form class="grid" asp-page="/Index" method="post">
+        <button type="button" class="secondary" x-on:click="navigator.share(@shareData)">Share</button>
+        <button type="submit">Start new quiz</button>
+    </form>
+</section>
