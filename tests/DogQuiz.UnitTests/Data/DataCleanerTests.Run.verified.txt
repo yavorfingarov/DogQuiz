@@ -1,0 +1,336 @@
+﻿{
+  target: {
+    userSessions: [
+      {
+        expiration: 2024-12-13 21:35:00,
+        id: not_expired_user_session
+      }
+    ],
+    quizzes: [
+      {
+        expiration: 2024-10-13 21:35:00,
+        id: expired_quiz_with_answers
+      },
+      {
+        expiration: 2024-12-13 21:35:00,
+        id: not_expired_quiz_no_answers
+      },
+      {
+        expiration: 2024-10-13 21:35:00,
+        id: not_expired_quiz_with_answers
+      }
+    ],
+    quizQuestions: [
+      {
+        image_id: 28,
+        question_id: 1,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 15,
+        question_id: 2,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 69,
+        question_id: 3,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 65,
+        question_id: 4,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 21,
+        question_id: 5,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 104,
+        question_id: 6,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 55,
+        question_id: 7,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 88,
+        question_id: 8,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 107,
+        question_id: 9,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 97,
+        question_id: 10,
+        quiz_id: expired_quiz_with_answers
+      },
+      {
+        image_id: 10,
+        question_id: 1,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 31,
+        question_id: 2,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 76,
+        question_id: 3,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 23,
+        question_id: 4,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 50,
+        question_id: 5,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 95,
+        question_id: 6,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 16,
+        question_id: 7,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 47,
+        question_id: 8,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 43,
+        question_id: 9,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 52,
+        question_id: 10,
+        quiz_id: not_expired_quiz_no_answers
+      },
+      {
+        image_id: 60,
+        question_id: 1,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 95,
+        question_id: 2,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 82,
+        question_id: 3,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 110,
+        question_id: 4,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 64,
+        question_id: 5,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 117,
+        question_id: 6,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 67,
+        question_id: 7,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 73,
+        question_id: 8,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 100,
+        question_id: 9,
+        quiz_id: not_expired_quiz_with_answers
+      },
+      {
+        image_id: 106,
+        question_id: 10,
+        quiz_id: not_expired_quiz_with_answers
+      }
+    ],
+    quizAnswers: [
+      {
+        breed_id: 7008,
+        question_id: 1,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 4000,
+        question_id: 2,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12018,
+        question_id: 3,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12017,
+        question_id: 4,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 5005,
+        question_id: 5,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12033,
+        question_id: 6,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12020,
+        question_id: 7,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12020,
+        question_id: 8,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 7008,
+        question_id: 9,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12034,
+        question_id: 10,
+        quiz_id: expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12015,
+        question_id: 1,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12027,
+        question_id: 2,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12023,
+        question_id: 3,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12032,
+        question_id: 4,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12017,
+        question_id: 5,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12014,
+        question_id: 6,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 2001,
+        question_id: 7,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12034,
+        question_id: 8,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12025,
+        question_id: 9,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      },
+      {
+        breed_id: 12019,
+        question_id: 10,
+        quiz_id: not_expired_quiz_with_answers,
+        user_session_id: not_expired_user_session
+      }
+    ],
+    quizResults: [
+      {
+        quiz_id: expired_quiz_with_answers,
+        score: 50.0,
+        timestamp: 2024-11-13 21:35:00,
+        user_session_id: not_expired_user_session
+      },
+      {
+        quiz_id: null,
+        score: 50.0,
+        timestamp: 2024-11-13 21:35:00,
+        user_session_id: null
+      },
+      {
+        quiz_id: not_expired_quiz_with_answers,
+        score: 50.0,
+        timestamp: 2024-11-13 21:35:00,
+        user_session_id: not_expired_user_session
+      },
+      {
+        quiz_id: null,
+        score: 50.0,
+        timestamp: 2024-11-13 21:35:00,
+        user_session_id: null
+      }
+    ]
+  },
+  log: {
+    Information: Data clean finished. Rows affected: 4,
+    Category: DataCleaner,
+    State: [
+      {
+        RowsAffected: 4
+      },
+      {
+        {OriginalFormat}: Data clean finished. Rows affected: {RowsAffected}
+      }
+    ]
+  }
+}

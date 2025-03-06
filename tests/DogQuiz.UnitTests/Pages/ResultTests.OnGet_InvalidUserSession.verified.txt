@@ -1,0 +1,12 @@
+﻿{
+  actionResult: {
+    StatusCode: 400
+  },
+  PageModel: {
+    Score: null,
+    Answers: null,
+    ShareUrl: null
+  },
+  Headers: {},
+  userSessions: []
+}

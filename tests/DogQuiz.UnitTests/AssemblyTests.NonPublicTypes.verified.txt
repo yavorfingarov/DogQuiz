@@ -1,0 +1,7 @@
+﻿[
+  DogQuiz.Data.DogApi+Response`1,
+  DogQuiz.Pages.AboutModel+BreedSummary,
+  DogQuiz.Pages.IndexModel+Result,
+  DogQuiz.Pages.QuizModel+Breed,
+  DogQuiz.Pages.ResultModel+Answer
+]

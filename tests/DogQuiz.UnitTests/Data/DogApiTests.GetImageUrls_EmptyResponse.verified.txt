@@ -1,0 +1,4 @@
+﻿{
+  Type: InvalidOperationException,
+  Message: Fetched an unexpected null value for 'response'.
+}

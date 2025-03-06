@@ -1,0 +1,56 @@
+{
+    "Appenzeller": [],
+    "Australian": [
+        "Kelpie",
+        "Shepherd"
+    ],
+    "Bakharwal": [
+        "Indian"
+    ],
+    "Beagle": [],
+    "Bulldog": [
+        "Boston",
+        "English",
+        "French"
+    ],
+    "Bullterrier": [
+        "Staffordshire"
+    ],
+    "Cattledog": [
+        "Australian"
+    ],
+    "Cavapoo": [],
+    "Chihuahua": [],
+    "Retriever": [
+        "Chesapeake",
+        "Curly",
+        "Flatcoated",
+        "Golden"
+    ],
+    "Rottweiler": [],
+    "Terrier": [
+        "American",
+        "Australian",
+        "Bedlington",
+        "Border",
+        "Cairn",
+        "Dandie",
+        "Fox",
+        "Irish",
+        "Kerryblue",
+        "Lakeland",
+        "Norfolk",
+        "Norwich",
+        "Patterdale",
+        "Russell",
+        "Scottish",
+        "Sealyham",
+        "Silky",
+        "Tibetan",
+        "Toy",
+        "Welsh",
+        "Westhighland",
+        "Wheaten",
+        "Yorkshire"
+    ]
+}

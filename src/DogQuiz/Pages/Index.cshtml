@@ -1,0 +1,30 @@
+﻿@page "/"
+@model IndexModel
+
+<hgroup class ="align-center">
+    <h1>Welcome!</h1>
+    <p>How many dog breeds can you recognize?</p>
+</hgroup>
+<section>
+    <div class="image-container">
+        <img src="/@(Model.RandomImage).jpg" alt="Dog" />
+    </div>
+</section>
+<form method="post">
+    <button type="submit">Start new quiz</button>
+</form>
+@if (Model.Results?.Count() > 0)
+{
+    <h2>Previous scores:</h2>
+    <ul>
+        @foreach (var result in Model.Results)
+        {
+            <li>
+                <strong>@result.Score.ToPercent()</strong>
+                <em>
+                    <a asp-page="/Result" asp-route-quizId="@result.QuizId">@result.Timestamp.Humanize()</a>
+                </em>
+            </li>
+        }
+    </ul>
+}

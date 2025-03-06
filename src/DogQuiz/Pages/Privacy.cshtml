@@ -1,0 +1,16 @@
+﻿@page "/privacy"
+
+<h1>Privacy</h1>
+<p>This application does not and will never collect any personal information.</p>
+<h2>Cookies</h2>
+<p>These first-party functional cookies are strictly needed:</p>
+<ul>
+    <li>
+        <code>@Configuration.AntiforgeryTokenCookieName</code> prevents
+        <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">cross-site request forgery attacks</a>.
+    </li>
+    <li>
+        <code>@Configuration.UserSessionIdCookieName</code> stores a randomly generated user ID that enables showing 
+        previously solved quizzes on the <a asp-page="/Index">home page</a>.
+    </li>
+</ul>

@@ -1,0 +1,36 @@
+﻿{
+  actionResult: {
+    UrlHelper: null,
+    PageName: null,
+    PageHandler: null,
+    RouteValues: {
+      quizId: testQuizId
+    },
+    Permanent: false,
+    PreserveMethod: false,
+    Fragment: null,
+    Protocol: null,
+    Host: null
+  },
+  PageModel: {
+    Images: null,
+    Breeds: null,
+    Answers: null
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+00:00,
+      id: testUserSessionId
+    }
+  ],
+  quizzes: [],
+  quizQuestionBreedIds: [],
+  quizAnswers: [],
+  quizResults: [],
+  updatedBreeds: []
+}

@@ -1,0 +1,13 @@
+﻿{
+  target: {
+    StatusCode: 500
+  },
+  log: {
+    Error: Health check failed.,
+    Category: HealthEndpoint,
+    Exception: {
+      Type: NotImplementedException,
+      Message: The method or operation is not implemented.
+    }
+  }
+}

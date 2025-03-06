@@ -1,0 +1,23 @@
+{
+    "name": "dog-quiz",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "update": "npx npm-check-updates --interactive --format group",
+        "pwa:generate-assets": "pwa-assets-generator",
+        "lint": "eslint ./Pages/Assets",
+        "bundle": "node ./esbuild.js",
+        "build": "npm run lint && npm run bundle"
+    },
+    "devDependencies": {
+        "@eslint/js": "9.21.0",
+        "@vite-pwa/assets-generator": "0.2.6",
+        "esbuild": "0.25.0",
+        "eslint": "9.21.0",
+        "globals": "16.0.0"
+    },
+    "dependencies": {
+        "@picocss/pico": "2.0.6",
+        "alpinejs": "3.14.8"
+    }
+}

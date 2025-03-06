@@ -1,0 +1,10 @@
+stryker-config:
+  configuration: 'Release'
+  project: 'DogQuiz.csproj'
+  test-projects: ['DogQuiz.UnitTests/DogQuiz.UnitTests.csproj']
+  mutate: ['!**/Program.cs']
+  mutation-level: 'Advanced'
+  thresholds:
+    high: 85
+    low: 70
+  reporters: ['dots', 'html', 'markdown']

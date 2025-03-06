@@ -1,0 +1,76 @@
+﻿{
+  actionResult: {
+    ContentType: null,
+    Model: null,
+    Page: null,
+    ViewData: null,
+    StatusCode: null
+  },
+  PageModel: {
+    Score: 80.0,
+    Answers: [
+      {
+        Given: Staffordshire Bullterrier,
+        Correct: Staffordshire Bullterrier,
+        ImageFilename: 6007_Bullterrier_Staffordshire_0
+      },
+      {
+        Given: Border Terrier,
+        Correct: Border Terrier,
+        ImageFilename: 12016_Terrier_Border_0
+      },
+      {
+        Given: Fox Terrier,
+        Correct: Fox Terrier,
+        ImageFilename: 12019_Terrier_Fox_1
+      },
+      {
+        Given: Golden Retriever,
+        Correct: Golden Retriever,
+        ImageFilename: 10012_Retriever_Golden_1
+      },
+      {
+        Given: Rottweiler,
+        Correct: Rottweiler,
+        ImageFilename: 11000_Rottweiler_2
+      },
+      {
+        Given: Shepherd Australian,
+        Correct: Shepherd Australian,
+        ImageFilename: 2002_Australian_Shepherd_0
+      },
+      {
+        Given: Chihuahua,
+        Correct: Chihuahua,
+        ImageFilename: 9000_Chihuahua_1
+      },
+      {
+        Given: Lakeland Terrier,
+        Correct: Lakeland Terrier,
+        ImageFilename: 12022_Terrier_Lakeland_0
+      },
+      {
+        Given: Kelpie Australian,
+        Correct: Silky Terrier,
+        ImageFilename: 12029_Terrier_Silky_1
+      },
+      {
+        Given: Westhighland Terrier,
+        Correct: Welsh Terrier,
+        ImageFilename: 12032_Terrier_Welsh_0
+      }
+    ],
+    ShareUrl: https://dogquiz.com/test
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+00:00,
+      id: testUserSessionId
+    }
+  ]
+}

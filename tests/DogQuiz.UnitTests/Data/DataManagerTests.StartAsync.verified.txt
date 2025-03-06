@@ -1,0 +1,14 @@
+﻿{
+  dataLoader: [
+    {
+      Method: IDataLoader.Run(),
+      Arguments: []
+    }
+  ],
+  dataCleaner: [
+    {
+      Method: IDataCleaner.Run(),
+      Arguments: []
+    }
+  ]
+}

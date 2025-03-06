@@ -1,0 +1,4 @@
+﻿[
+  DogQuiz.Common.ExtensionMethods,
+  DogQuiz.Program
+]

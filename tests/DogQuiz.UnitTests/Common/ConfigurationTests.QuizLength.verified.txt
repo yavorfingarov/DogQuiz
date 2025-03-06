@@ -1,0 +1,16 @@
+﻿[
+  {
+    Minimum: 1,
+    Maximum: 50,
+    MinimumIsExclusive: false,
+    MaximumIsExclusive: false,
+    OperandType: int,
+    ParseLimitsInInvariantCulture: false,
+    ConvertValueInInvariantCulture: false,
+    RequiresValidationContext: false,
+    ErrorMessage: null,
+    ErrorMessageResourceName: null,
+    ErrorMessageResourceType: null,
+    TypeId: RangeAttribute
+  }
+]

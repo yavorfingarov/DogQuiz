@@ -1,0 +1,28 @@
+﻿{
+  Calls: [
+    {
+      Status: null,
+      Request: https://testing.dog.ceo/api/breed/australian/kelpie/images,
+      Response: {
+        Status: 200 OK,
+        ContentHeaders: {
+          Content-Length: 212,
+          Content-Type: application/json
+        },
+        ContentStringParsed: {
+          message: [
+            https://testing.dog.ceo/api/image1.jpg,
+            https://testing.dog.ceo/api/image2.jpg,
+            https://testing.dog.ceo/api/image3.jpg
+          ],
+          status: success
+        }
+      }
+    }
+  ],
+  imageUrls: [
+    https://testing.dog.ceo/api/image1.jpg,
+    https://testing.dog.ceo/api/image2.jpg,
+    https://testing.dog.ceo/api/image3.jpg
+  ]
+}

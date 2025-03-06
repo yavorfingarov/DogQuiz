@@ -1,0 +1,26 @@
+﻿{
+  result: {
+    UrlHelper: null,
+    PageName: /Quiz,
+    PageHandler: null,
+    RouteValues: {
+      quizId: ulid1
+    },
+    Permanent: false,
+    PreserveMethod: false,
+    Fragment: null,
+    Protocol: null,
+    Host: null
+  },
+  quiz: [
+    {
+      expiration: 2025-02-11 21:35:00+00:00,
+      id: ulid1
+    }
+  ],
+  quizCount: [
+    {
+      val: 1
+    }
+  ]
+}

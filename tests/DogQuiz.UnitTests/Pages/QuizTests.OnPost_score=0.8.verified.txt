@@ -1,0 +1,222 @@
+﻿{
+  actionResult: {
+    UrlHelper: null,
+    PageName: /Result,
+    PageHandler: null,
+    RouteValues: {
+      quizId: testQuizId
+    },
+    Permanent: false,
+    PreserveMethod: false,
+    Fragment: null,
+    Protocol: null,
+    Host: null
+  },
+  PageModel: {
+    Images: null,
+    Breeds: null,
+    Answers: [
+      6007,
+      12016,
+      12019,
+      10012,
+      11000,
+      2002,
+      9000,
+      12022,
+      2001,
+      12033
+    ]
+  },
+  Headers: {
+    Set-Cookie: [
+      __Host-UserSessionId=testUserSessionId; max-age=7776000; path=/; secure; samesite=strict; httponly
+    ]
+  },
+  userSessions: [
+    {
+      expiration: 2025-02-11 21:35:00+00:00,
+      id: testUserSessionId
+    }
+  ],
+  quizzes: [
+    {
+      expiration: 2025-02-11 21:35:00+00:00,
+      id: testQuizId
+    }
+  ],
+  quizQuestionBreedIds: [
+    {
+      breed_id: 6007
+    },
+    {
+      breed_id: 12016
+    },
+    {
+      breed_id: 12019
+    },
+    {
+      breed_id: 10012
+    },
+    {
+      breed_id: 11000
+    },
+    {
+      breed_id: 2002
+    },
+    {
+      breed_id: 9000
+    },
+    {
+      breed_id: 12022
+    },
+    {
+      breed_id: 12029
+    },
+    {
+      breed_id: 12032
+    }
+  ],
+  quizAnswers: [
+    {
+      breed_id: 6007,
+      question_id: 1,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 12016,
+      question_id: 2,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 12019,
+      question_id: 3,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 10012,
+      question_id: 4,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 11000,
+      question_id: 5,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 2002,
+      question_id: 6,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 9000,
+      question_id: 7,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 12022,
+      question_id: 8,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 2001,
+      question_id: 9,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    },
+    {
+      breed_id: 12033,
+      question_id: 10,
+      quiz_id: testQuizId,
+      user_session_id: testUserSessionId
+    }
+  ],
+  quizResults: [
+    {
+      quiz_id: testQuizId,
+      score: 80.0,
+      timestamp: 2024-11-13 21:35:00+00:00,
+      user_session_id: testUserSessionId
+    }
+  ],
+  updatedBreeds: [
+    {
+      correct_answers: 0,
+      id: 2001,
+      questions: 1,
+      sub_breed_id: 1,
+      super_breed_id: 2
+    },
+    {
+      correct_answers: 1,
+      id: 2002,
+      questions: 1,
+      sub_breed_id: 2,
+      super_breed_id: 2
+    },
+    {
+      correct_answers: 1,
+      id: 6007,
+      questions: 1,
+      sub_breed_id: 7,
+      super_breed_id: 6
+    },
+    {
+      correct_answers: 1,
+      id: 9000,
+      questions: 1,
+      sub_breed_id: null,
+      super_breed_id: 9
+    },
+    {
+      correct_answers: 1,
+      id: 10012,
+      questions: 1,
+      sub_breed_id: 12,
+      super_breed_id: 10
+    },
+    {
+      correct_answers: 1,
+      id: 11000,
+      questions: 1,
+      sub_breed_id: null,
+      super_breed_id: 11
+    },
+    {
+      correct_answers: 1,
+      id: 12016,
+      questions: 1,
+      sub_breed_id: 16,
+      super_breed_id: 12
+    },
+    {
+      correct_answers: 1,
+      id: 12019,
+      questions: 1,
+      sub_breed_id: 19,
+      super_breed_id: 12
+    },
+    {
+      correct_answers: 1,
+      id: 12022,
+      questions: 1,
+      sub_breed_id: 22,
+      super_breed_id: 12
+    },
+    {
+      correct_answers: 0,
+      id: 12033,
+      questions: 1,
+      sub_breed_id: 33,
+      super_breed_id: 12
+    }
+  ]
+}

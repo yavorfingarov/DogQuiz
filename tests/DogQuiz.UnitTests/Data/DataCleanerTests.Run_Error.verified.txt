@@ -1,0 +1,10 @@
+﻿{
+  log: {
+    Error: Could not clean data.,
+    Category: DataCleaner,
+    Exception: {
+      Type: NotImplementedException,
+      Message: The method or operation is not implemented.
+    }
+  }
+}

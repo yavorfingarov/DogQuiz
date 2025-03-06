@@ -1,0 +1,20 @@
+﻿[
+  {
+    AllowEmptyStrings: false,
+    RequiresValidationContext: false,
+    ErrorMessage: null,
+    ErrorMessageResourceName: null,
+    ErrorMessageResourceType: null,
+    TypeId: RequiredAttribute
+  },
+  {
+    DataType: Url,
+    CustomDataType: null,
+    DisplayFormat: null,
+    RequiresValidationContext: false,
+    ErrorMessage: null,
+    ErrorMessageResourceName: null,
+    ErrorMessageResourceType: null,
+    TypeId: DataTypeAttribute
+  }
+]

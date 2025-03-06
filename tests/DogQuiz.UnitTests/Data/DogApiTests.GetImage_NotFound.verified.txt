@@ -1,0 +1,4 @@
+﻿{
+  Type: InvalidOperationException,
+  Message: Received status code 'NotFound' for 'https://testing.dog.ceo/api/image1.jpg'.
+}
