@@ -80,7 +80,10 @@ namespace DogQuiz.Pages
 
         private static string Sanitize(string input)
         {
-            return input.Replace(Environment.NewLine, "").Replace("\n", "").Replace("\r", "");
+            return input
+                .Replace(Environment.NewLine, "")
+                .Replace("\n", "")
+                .Replace("\r", "");
         }
     }
 }
