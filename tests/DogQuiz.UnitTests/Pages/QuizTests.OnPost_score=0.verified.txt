@@ -35,13 +35,13 @@
   },
   userSessions: [
     {
-      expiration: 2025-02-11 21:35:00+02:00,
+      expiration: 2025-02-11 21:35:00+00:00,
       id: testUserSessionId
     }
   ],
   quizzes: [
     {
-      expiration: 2025-02-11 21:35:00+02:00,
+      expiration: 2025-02-11 21:35:00+00:00,
       id: testQuizId
     }
   ],
@@ -143,7 +143,7 @@
     {
       quiz_id: testQuizId,
       score: 0.0,
-      timestamp: 2024-11-13 21:35:00+02:00,
+      timestamp: 2024-11-13 21:35:00+00:00,
       user_session_id: testUserSessionId
     }
   ],

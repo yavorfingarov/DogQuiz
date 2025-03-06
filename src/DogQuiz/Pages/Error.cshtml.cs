@@ -54,8 +54,8 @@ namespace DogQuiz.Pages
             _Logger.LogInformation(
                 "Error handled. Request: {Method} {Path} | Status code: {StatusCode} | " +
                 "HasAntiforgeryToken: {HasAntiforgeryToken} | UserSessionId: {UserSessionId}",
-                Request.Method,
-                path,
+                Sanitize(Request.Method),
+                Sanitize(path),
                 Response.StatusCode,
                 hasAntiforgeryToken,
                 userSessionId);
@@ -76,6 +76,11 @@ namespace DogQuiz.Pages
             }
 
             return Request.Path;
+        }
+
+        private static string Sanitize(string input)
+        {
+            return input.Replace(Environment.NewLine, "").Replace("\n", "").Replace("\r", "");
         }
     }
 }

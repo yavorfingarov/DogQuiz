@@ -50,7 +50,7 @@ namespace DogQuiz.UnitTests.TestHelpers
 
             ConfigurationOptions = Substitute.For<IOptions<Configuration>>();
             ConfigurationOptions.Value.Returns(_ => Configuration);
-            Now = new DateTime(2024, 11, 13, 21, 35, 0);
+            Now = new DateTime(2024, 11, 13, 21, 35, 0, DateTimeKind.Utc);
             TimeProvider = new FakeTimeProvider();
             TimeProvider.SetLocalTimeZone(TimeZoneInfo.Utc);
             TimeProvider.SetUtcNow(Now);
