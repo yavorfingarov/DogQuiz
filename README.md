@@ -1,7 +1,7 @@
 # DogQuiz
 
-[![status](https://img.shields.io/uptimerobot/status/m797417947-fe687be74c0746276cc9cb3d)](https://stats.uptimerobot.com/4wvr6UzvYm/797417947)
-[![uptime](https://img.shields.io/uptimerobot/ratio/m797417947-fe687be74c0746276cc9cb3d)](https://stats.uptimerobot.com/4wvr6UzvYm/797417947)
+[![status](https://img.shields.io/uptimerobot/status/m798715996-b605d8c19e8cf0bd3f7733e0)](https://stats.uptimerobot.com/4wvr6UzvYm/798715996)
+[![uptime](https://img.shields.io/uptimerobot/ratio/m798715996-b605d8c19e8cf0bd3f7733e0)](https://stats.uptimerobot.com/4wvr6UzvYm/798715996)
 [![build](https://img.shields.io/github/actions/workflow/status/yavorfingarov/DogQuiz/cd.yml?branch=master)](https://github.com/yavorfingarov/DogQuiz/actions/workflows/cd.yml?query=branch%3Amaster)
 [![loc](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/565201a48fe790a1f4600bfacbd49ce0/raw/lines-of-code.json)](https://github.com/yavorfingarov/DogQuiz/actions/workflows/cd.yml?query=branch%3Amaster)
 [![maintainability](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/565201a48fe790a1f4600bfacbd49ce0/raw/maintainability.json)](https://github.com/yavorfingarov/DogQuiz/actions/workflows/cd.yml?query=branch%3Amaster)
