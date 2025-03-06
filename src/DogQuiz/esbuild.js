@@ -8,7 +8,7 @@ const staticAssets = `${assets}/Static`;
 const outdir = "./wwwroot";
 const manifestPath = `${outdir}/manifest.json`;
 
-await fs.rm(outdir, { recursive: true });
+await fs.rm(outdir, { force: true, recursive: true });
 await fs.cp(staticAssets, outdir, { recursive: true });
 await fs.writeFile(manifestPath, JSON.stringify(manifest));
 await build({
