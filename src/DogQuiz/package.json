@@ -9,10 +9,6 @@
         "bundle": "node ./esbuild.js",
         "build": "npm run lint && npm run bundle"
     },
-    "engines": {
-        "node": "22.12.0",
-        "npm": "10.0.0"
-    },
     "devDependencies": {
         "@eslint/js": "9.21.0",
         "@vite-pwa/assets-generator": "0.2.6",
