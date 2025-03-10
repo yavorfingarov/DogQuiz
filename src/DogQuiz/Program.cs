@@ -78,6 +78,32 @@ namespace DogQuiz
 
             builder.Services.AddHostedService<DataManager>();
 
+            builder.Services
+                .AddSecurityHeaderPolicies()
+                .SetDefaultPolicy(policies =>
+                {
+                    policies.AddDefaultSecurityHeaders();
+                    policies.AddContentSecurityPolicy(policy =>
+                    {
+                        policy.AddDefaultSrc().None();
+                        policy.AddManifestSrc().Self();
+                        policy.AddStyleSrc().Self();
+                        policy.AddScriptSrc().Self().UnsafeEval();
+                        policy.AddImgSrc().Self().Data();
+                        policy.AddFormAction().Self();
+                        if (builder.Environment.IsDevelopment())
+                        {
+                            policy.AddConnectSrc().From("*");
+                        }
+                    });
+                    policies.AddPermissionsPolicy(policy =>
+                    {
+                        policy.AddDefaultSecureDirectives();
+                        policy.AddWebShare().Self();
+                    });
+                    policies.AddCustomHeader(Configuration.AppInfoHeaderName, _AppInfo);
+                });
+
             builder.Services.AddAntiforgery(options =>
             {
                 options.FormFieldName = Configuration.AntiforgeryTokenFormFieldName;
@@ -121,30 +147,11 @@ namespace DogQuiz
                     options.HtmlHelperOptions.ClientValidationEnabled = false;
                 });
 
-            if (!builder.Environment.IsDevelopment())
-            {
-                builder.Services.AddHsts(options =>
-                {
-                    options.Preload = true;
-                    options.IncludeSubDomains = true;
-                    options.MaxAge = TimeSpan.FromDays(365);
-                });
-            }
-
             var app = builder.Build();
 
             app.UseExceptionHandler("/error");
 
-            app.UseSecurityHeaders(policies =>
-            {
-                policies.AddDefaultSecurityHeaders();
-                policies.AddCustomHeader(Configuration.AppInfoHeaderName, _AppInfo);
-            });
-
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseHsts();
-            }
+            app.UseSecurityHeaders();
 
             app.UseHttpsRedirection();
 
@@ -155,6 +162,8 @@ namespace DogQuiz
             app.MapMethods("/health", new[] { "HEAD" }, HealthEndpoint.Handle);
 
             app.UseStatusCodePagesWithReExecute("/error");
+
+            app.UseForwardedHeaders();
 
             app.UseRateLimiter();
 
