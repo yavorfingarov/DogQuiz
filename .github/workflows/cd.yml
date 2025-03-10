@@ -44,12 +44,12 @@ jobs:
 
       - name: Run unit tests
         env:
-          ACTIONS_RUNTIME_TOKEN: {{ github.token }}
+          ACTIONS_RUNTIME_TOKEN: ${{ github.token }}
         run: .\build\run.ps1 --exclusive --target RunUnitTests --verbosity Diagnostic
 
       - name: Run mutation tests
         env:
-          ACTIONS_RUNTIME_TOKEN: {{ github.token }}
+          ACTIONS_RUNTIME_TOKEN: ${{ github.token }}
         run: .\build\run.ps1 --exclusive --target RunMutationTests
 
       - name: Update status gists
