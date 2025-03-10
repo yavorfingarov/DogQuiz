@@ -43,7 +43,7 @@ jobs:
         run: .\build\run.ps1 --exclusive --target Build
 
       - name: Run unit tests
-        run: .\build\run.ps1 --exclusive --target RunUnitTests
+        run: .\build\run.ps1 --exclusive --target RunUnitTests --verbosity Diagnostic
 
       - name: Run mutation tests
         run: .\build\run.ps1 --exclusive --target RunMutationTests
