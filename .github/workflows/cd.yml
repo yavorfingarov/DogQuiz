@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [master]
 
+permissions:
+  contents: read
+
 env:
   DOTNET_VERSION: 9.0.x
   STATUS_GIST_ID: 565201a48fe790a1f4600bfacbd49ce0
@@ -40,9 +43,13 @@ jobs:
         run: .\build\run.ps1 --exclusive --target Build
 
       - name: Run unit tests
+        env:
+          ACTIONS_RUNTIME_TOKEN: {{ github.token }}
         run: .\build\run.ps1 --exclusive --target RunUnitTests --verbosity Diagnostic
 
       - name: Run mutation tests
+        env:
+          ACTIONS_RUNTIME_TOKEN: {{ github.token }}
         run: .\build\run.ps1 --exclusive --target RunMutationTests
 
       - name: Update status gists
