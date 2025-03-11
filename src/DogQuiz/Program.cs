@@ -83,6 +83,7 @@ namespace DogQuiz
                 .SetDefaultPolicy(policies =>
                 {
                     policies.AddDefaultSecurityHeaders();
+                    policies.AddStrictTransportSecurityMaxAgeIncludeSubDomainsAndPreload();
                     policies.AddContentSecurityPolicy(policy =>
                     {
                         policy.AddDefaultSrc().None();
@@ -91,6 +92,8 @@ namespace DogQuiz
                         policy.AddScriptSrc().Self().UnsafeEval();
                         policy.AddImgSrc().Self().Data();
                         policy.AddFormAction().Self();
+                        policy.AddFrameAncestors().None();
+                        policy.AddBaseUri().None();
                         if (builder.Environment.IsDevelopment())
                         {
                             policy.AddConnectSrc().From("*");
