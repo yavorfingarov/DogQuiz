@@ -7,6 +7,7 @@
 [![maintainability](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/565201a48fe790a1f4600bfacbd49ce0/raw/maintainability.json)](https://github.com/yavorfingarov/DogQuiz/actions/workflows/cd.yml?query=branch%3Amaster)
 [![test coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/565201a48fe790a1f4600bfacbd49ce0/raw/test-coverage.json)](https://github.com/yavorfingarov/DogQuiz/actions/workflows/cd.yml?query=branch%3Amaster)
 [![mutation score](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yavorfingarov/565201a48fe790a1f4600bfacbd49ce0/raw/mutation-score.json)](https://github.com/yavorfingarov/DogQuiz/actions/workflows/cd.yml?query=branch%3Amaster)
+[![observatory](https://img.shields.io/mozilla-observatory/grade/dogquiz.azurewebsites.net)](https://developer.mozilla.org/en-US/observatory/analyze?host=dogquiz.azurewebsites.net)
 
 DogQuiz is a small web app for testing your dog breed knowledge.
 
