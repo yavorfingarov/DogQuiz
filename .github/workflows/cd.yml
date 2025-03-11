@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [master]
 
+permissions:
+  contents: read
+
 env:
   DOTNET_VERSION: 9.0.x
   STATUS_GIST_ID: 565201a48fe790a1f4600bfacbd49ce0
@@ -40,16 +43,17 @@ jobs:
         run: .\build\run.ps1 --exclusive --target Build
 
       - name: Run unit tests
-        env:
-          ACTIONS_RUNTIME_URL: ${{ github.api_url }}
-          ACTIONS_RUNTIME_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: .\build\run.ps1 --exclusive --target RunUnitTests --verbosity Diagnostic
+        run: .\build\run.ps1 --exclusive --target RunUnitTests
 
       - name: Run mutation tests
-        env:
-          ACTIONS_RUNTIME_URL: ${{ github.api_url }}
-          ACTIONS_RUNTIME_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: .\build\run.ps1 --exclusive --target RunMutationTests
+
+      - name: Upload test results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+        with:
+          name: TestResults-${{ env.TIMESTAMP }}
+          path: .\tmp\test-results\
 
       - name: Update status gists
         if: ${{ github.event_name == 'push' }}

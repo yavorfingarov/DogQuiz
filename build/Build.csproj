@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Yf.Cake.Layers" Version="0.3.6" />
+    <PackageReference Include="Yf.Cake.Layers" Version="0.4.0" />
   </ItemGroup>
   
 </Project>
