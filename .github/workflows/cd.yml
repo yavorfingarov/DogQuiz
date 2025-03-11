@@ -48,6 +48,13 @@ jobs:
       - name: Run mutation tests
         run: .\build\run.ps1 --exclusive --target RunMutationTests
 
+      - name: Upload test results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1
+        with:
+          name: TestResults-${{ env.TIMESTAMP }}
+          path: .\tmp\test-results\
+
       - name: Update status gists
         if: ${{ github.event_name == 'push' }}
         env:

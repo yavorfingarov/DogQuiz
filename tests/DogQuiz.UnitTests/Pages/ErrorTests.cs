@@ -142,6 +142,22 @@ namespace DogQuiz.UnitTests.Pages
                 .UseParameters(httpMethod);
         }
 
+        [Theory]
+        [InlineData("\r\nrn")]
+        [InlineData("\rr")]
+        [InlineData("\nn")]
+        public Task Sanitize(string newLine)
+        {
+            PageModel.Request.Path = $"/request{newLine}/path";
+            PageModel.Request.Method = $"PO{newLine}ST";
+            PageModel.Response.StatusCode = StatusCodes.Status200OK;
+
+            PageModel.OnPost();
+
+            return Verify(PageModel)
+                .UseParameters(newLine);
+        }
+
         private void Invoke(string httpMethod)
         {
             if (httpMethod == "GET")

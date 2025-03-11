@@ -13,6 +13,7 @@
   Microsoft.AspNetCore.Http.Abstractions,
   Microsoft.AspNetCore.Http.Features,
   Microsoft.AspNetCore.Http.Results,
+  Microsoft.AspNetCore.HttpOverrides,
   Microsoft.AspNetCore.HttpsPolicy,
   Microsoft.AspNetCore.Mvc,
   Microsoft.AspNetCore.Mvc.Abstractions,

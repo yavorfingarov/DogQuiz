@@ -4,10 +4,10 @@ namespace DogQuiz.Common
 {
     public sealed class Configuration
     {
-        public const string AppInfoHeaderName = "X-App-Info";
-        public const string AntiforgeryTokenFormFieldName = "__AntiforgeryToken";
-        public const string AntiforgeryTokenCookieName = "__Host-AntiforgeryToken";
-        public const string UserSessionIdCookieName = "__Host-UserSessionId";
+        public static string AppInfoHeaderName => "X-App-Info";
+        public static string AntiforgeryTokenFormFieldName => "__AntiforgeryToken";
+        public static string AntiforgeryTokenCookieName => "__Host-AntiforgeryToken";
+        public static string UserSessionIdCookieName => "__Host-UserSessionId";
 
         [Required, DataType(DataType.Url)]
         public string DogApiBaseUrl { get; set; } = null!;
