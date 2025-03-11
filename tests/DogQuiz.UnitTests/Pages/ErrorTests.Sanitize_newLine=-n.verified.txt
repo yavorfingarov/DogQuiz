@@ -1,0 +1,28 @@
+﻿{
+  target: {
+    Message: Not found,
+    ShowCookieHint: false
+  },
+  log: {
+    Information: Error handled. Request: POnST /request%0An/path | Status code: 404 | HasAntiforgeryToken: False | UserSessionId: (null),
+    Category: ErrorModel,
+    State: [
+      {
+        Method: POnST
+      },
+      {
+        Path: /request%0An/path
+      },
+      {
+        StatusCode: 404
+      },
+      {
+        HasAntiforgeryToken: false
+      },
+      {},
+      {
+        {OriginalFormat}: Error handled. Request: {Method} {Path} | Status code: {StatusCode} | HasAntiforgeryToken: {HasAntiforgeryToken} | UserSessionId: {UserSessionId}
+      }
+    ]
+  }
+}

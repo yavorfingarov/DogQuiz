@@ -1,0 +1,148 @@
+﻿{
+  AntiforgeryTokenCookieName: __Host-AntiforgeryToken,
+  AntiforgeryTokenFormFieldName: __AntiforgeryToken,
+  AppInfoHeaderName: X-App-Info,
+  CleanerPeriodHours: [
+    {
+      Minimum: 12,
+      Maximum: 24,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  CleanerWaitHours: [
+    {
+      Minimum: 1,
+      Maximum: 6,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  DogApiBaseUrl: [
+    {
+      AllowEmptyStrings: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RequiredAttribute
+    },
+    {
+      DataType: Url,
+      CustomDataType: null,
+      DisplayFormat: null,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: DataTypeAttribute
+    }
+  ],
+  ImagesPath: [
+    {
+      AllowEmptyStrings: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RequiredAttribute
+    }
+  ],
+  ImageTargetMinFileSize: [
+    {
+      Minimum: 5000,
+      Maximum: 50000,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  ImageTargetQuality: [
+    {
+      Minimum: 1,
+      Maximum: 100,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  ImageTargetSize: [
+    {
+      Minimum: 300,
+      Maximum: 900,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  QuizExpirationInDays: [
+    {
+      Minimum: 60,
+      Maximum: 365,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  QuizLength: [
+    {
+      Minimum: 1,
+      Maximum: 50,
+      MinimumIsExclusive: false,
+      MaximumIsExclusive: false,
+      OperandType: int,
+      ParseLimitsInInvariantCulture: false,
+      ConvertValueInInvariantCulture: false,
+      RequiresValidationContext: false,
+      ErrorMessage: null,
+      ErrorMessageResourceName: null,
+      ErrorMessageResourceType: null,
+      TypeId: RangeAttribute
+    }
+  ],
+  UserSessionIdCookieName: __Host-UserSessionId
+}
