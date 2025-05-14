@@ -31,8 +31,10 @@ jobs:
           - language: actions
             build-mode: none
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
 
       - name: Set up .NET
         if: ${{ matrix.build-mode == 'manual' }}
@@ -41,7 +43,7 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@1b549b9259bda1cb5ddde3b41741a82a2d15a841
+        uses: github/codeql-action/init@60168efe1c415ce0f5521ea06d5c2062adbeed1b
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
@@ -59,6 +61,6 @@ jobs:
         run: .\build\run.ps1 --exclusive --target Build
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@1b549b9259bda1cb5ddde3b41741a82a2d15a841
+        uses: github/codeql-action/analyze@60168efe1c415ce0f5521ea06d5c2062adbeed1b
         with:
           category: "/language:${{matrix.language}}"

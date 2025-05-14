@@ -16,8 +16,10 @@ jobs:
     permissions:
       security-events: write
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
 
       - name: Run DevSkim scan
         uses: microsoft/DevSkim-Action@a6b6966a33b497cd3ae2ebc406edf8f4cc2feec6
@@ -25,6 +27,6 @@ jobs:
           directory-to-scan: ./src/
 
       - name: Upload DevSkim scan results
-        uses: github/codeql-action/upload-sarif@1b549b9259bda1cb5ddde3b41741a82a2d15a841
+        uses: github/codeql-action/upload-sarif@60168efe1c415ce0f5521ea06d5c2062adbeed1b
         with:
           sarif_file: devskim-results.sarif
