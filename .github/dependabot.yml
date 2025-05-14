@@ -17,3 +17,12 @@ updates:
       main:
         patterns:
           - "*"
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      main:
+        patterns:
+          - "*"
