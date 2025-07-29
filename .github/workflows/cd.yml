@@ -72,7 +72,7 @@ jobs:
 
       - name: Deploy to Azure App Service
         if: ${{ github.event_name == 'push' && env.SRC_CHANGED == 'true' }}
-        uses: azure/webapps-deploy@2fdd5c3ebb4e540834e86ecc1f6fdcd5539023ee
+        uses: azure/webapps-deploy@e8d44d20a4b02f733385c4755aca052069eeb988
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
